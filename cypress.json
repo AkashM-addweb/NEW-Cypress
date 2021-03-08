@@ -15,8 +15,9 @@
     
     "reporter": "mochawesome",
     "reporterOptions": {
-      "reportDir": "cypress/reports",
-      "reportFilename":"report",
+      "reporterEnabled":"mochawesome",
+      "reportDir": "cypress/reports/",
+      "reportFilename":"reports",
       "overwrite": false,
       "html": true,
       "json": true,
