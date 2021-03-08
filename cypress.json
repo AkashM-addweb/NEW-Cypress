@@ -1,0 +1,27 @@
+{
+    "baseURL": "http://localhost:8000/",
+    "video": false,
+    "ignoreTestFiles": [
+        "**/__snapshots__/*",
+        "**/__image_snapshots__/*"
+      ],    
+      "env": {
+        "cypress-plugin-snapshots": {
+          "imageConfig": {
+            "threshold": 0.01
+          }
+        }
+    },
+    
+    "reporter": "mochawesome",
+    "reporterOptions": {
+      "reportDir": "cypress/reports",
+      "reportFilename":"report",
+      "overwrite": false,
+      "html": true,
+      "json": true,
+      "charts": true
+    }
+}
+
+
